@@ -1,0 +1,11 @@
+FROM python:3.10.11
+
+WORKDIR /workspace
+
+COPY requirements.txt .
+
+RUN pip install --upgrade pip && pip install -r requirements.txt --no-cache-dir
+
+COPY src src
+COPY tests tests
+COPY pyproject.toml .
