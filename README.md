@@ -27,7 +27,7 @@ POST api/v1/wallets/{WALLET_UUID}/operation
 # Запуск проекта:
 
 - Клонируйте репозиторий.
-- Перейдите в папку **backend**.
+- Перейдите в папку **docker**.
 - Создайте файл **.env** с переменными окружения:
     ```
     DB_HOST=db
@@ -53,3 +53,4 @@ POST api/v1/wallets/{WALLET_UUID}/operation
     ```
     docker-compose run --rm tests
     ```
+- Документация к API будет доступна по url-адресу [localhost:8000/redoc](http://localhost:8000/redoc)
